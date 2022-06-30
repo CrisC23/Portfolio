@@ -364,7 +364,9 @@ div.card.show {
 
 
 .middle-container{
+
   padding: 10px;
+  padding-top: 50px;
   display: flex;
   justify-content: center;
 }
@@ -401,27 +403,31 @@ div.card.show {
     width: 50%;
     padding: 10px;
     justify-content: center;
-    padding-left: 10%;
+
   }
  
 }
 /* end of contact - on smaller screens  */
 /* start of contact  */
 
+footer {
+  background-color: #252f31; 
+}
+
 #contact-me {
   background-color: #252f31;
   overflow: hidden;
   padding-top: 50px;
-  display: flexbox;
-  font-size: 10px;
+  font-size: 20px;
+  width: auto;
+  
 }
-
 
 .contact-me h2 {
   color: #fff;
   padding-top: 50px;
   max-width: 960px;
-  font-size: 30px;
+  font-size: 50px;
   text-align: center;
 }
 
@@ -434,11 +440,8 @@ div.card.show {
 }
 .contact-me p strong {
   color: #d1d6da;
-  background-color: #191e22;
 }
-#text{
-  background-color: red;
-}
+
 .contact-me .info,
 .contact-me .form {
   width: 45%;
@@ -456,7 +459,6 @@ div.card.show {
   margin-top: 20px;
 }
 .contact-me .form input[type="text"] {
-  color: #fff;
   background-color: #4b5557;
   border: 0;
   width: 80%;
@@ -465,7 +467,6 @@ div.card.show {
   border-radius: 5px;
 }
 .contact-me .form input[type="email"] {
-  color: #fff;
   background-color: #4b5557;
   border: 0;
   width: 80%;
@@ -495,11 +496,6 @@ div.card.show {
 
 /* footer / socials  */
 
-.footer{
-    justify-content: center;
-    text-align: center;
-    background-color: #252f31;
-}
 .social {
   padding: 50px;
   display: flex;
@@ -509,7 +505,7 @@ div.card.show {
 /* smaller screens */
 @media screen and (max-width: 960px) {
   .socials {
-    width: 20%;
+    width: 25%;
     margin: -4px;
   }
 }
