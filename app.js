@@ -13,12 +13,13 @@
       // a card is already in view
       ("div.card.show")
         .removeClass("show");
-
-      elseif (isShowing) {
+    
+      elseif (isShowing){
         // this card was showing - reset the grid
         ("div.cards")
           .removeClass("showing");
-      } else {
+      } 
+      else {
         // this card isn't showing - get in with it
         (this)
           .css({zIndex: zindex})
@@ -49,3 +50,6 @@ function fade($ele) {
  });
 }
 fade(('.quoteLoop > .quote').first());
+
+const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
